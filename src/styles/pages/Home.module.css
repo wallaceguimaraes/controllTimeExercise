@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section{
+flex: 1;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap:6.25rem; /*multiplica por 16px q da 100px em desktop*/
+align-content: center;
+}
+
+
+@media(max-width:767px){
+    .container section{
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:6.25rem; /*multiplica por 16px q da 100px em desktop, gap é o espacamento*/
+        align-content: center;
+        }
+        
+
+
+}
